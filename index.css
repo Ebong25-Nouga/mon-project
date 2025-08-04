@@ -1,0 +1,453 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.logo {
+    width: 112px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+input, select, textarea{
+    outline: none;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.header-left {
+    background-color: #1F262E;
+    width: 25%;
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    padding-inline: 20px;
+    align-items: center;
+    color: #CED0D3;
+}
+
+.second-bars{
+    cursor: pointer;
+}
+
+i.second-bars, i.dots{
+    display: none;
+}
+
+i.dots{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.header-left-container{
+    display: flex;
+    gap: 10px;
+}
+
+.plus {
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.header-right {
+    width: 75%;
+    display: flex;
+    height: 10vh;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #15161A;
+    color: #CED0D3;
+    padding-inline: 20px;
+    transition: all .3s linear;
+}
+
+.left-icons-group,
+.right-icons-group {
+    display: flex;
+    gap: 20px;
+}
+
+.left-icons-group i,
+.right-icons-group i {
+    cursor: pointer;
+    font-size: 20px;
+}
+
+main{
+    display: flex;
+}
+
+main aside{
+    width: 25%;
+    background-color: #1F262E;
+    transition: all .3s;
+}
+
+aside.minimize{
+    width: 5%;
+}
+
+aside.minimize span{
+    display: none;
+}
+
+.header-left.minimize{
+    width: 5%;
+}
+
+.header-left.minimize .logo{
+    display: none;
+}
+
+.header-right.grow{
+    width: 100%;
+}
+
+.link{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-inline: 20px;
+    padding-block: 15px;
+    color: #A4A8AD;
+    gap: 10px;
+    margin-bottom: 5px;
+}
+
+.active{
+    background-color: #27A9E3;
+    color: white;
+}
+
+main .main-content{
+    width: 75%;
+    background-color: #EEEEEE;
+    padding-top: 30px;
+    padding-inline: 20px;
+    padding-bottom: 10px;
+}
+
+.main-content.grow{
+    width: 95%;
+}
+
+.main-content-top{
+    display: flex;
+    justify-content: space-between;
+}
+
+.breadcrumb{
+    display: flex;
+    gap: 10px;
+    color: #abacac;
+}
+
+.current-page{
+    color: #27A9E3;
+}
+
+.statuts{
+    margin-block: 30px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.statuts i {
+    font-size: 25px;
+}
+
+.statuts > div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-block: 25px;
+    gap: 20px;
+    border-radius: 5px;
+    transition: all .3s linear;
+}
+
+.statuts > div:hover{
+    transform: translateY(-15px);
+}
+
+.statuts > div:nth-child(1){
+    background-color: #27A9E3;
+}
+
+.statuts > div:nth-child(2){
+    background-color: #28B779;
+}
+
+.statuts > div:nth-child(3){
+    background-color: #FFB748;
+}
+
+.statuts > div:nth-child(4){
+    background-color: #DA542E;
+}
+
+.description-statut{
+    text-align: center;
+}
+
+.commandes, .medicaments, .users, .orders, .add-drug{
+    background-color: white;
+    padding-inline: 20px;
+    padding-block: 20px;
+}
+
+.titre-commandes, .titre-medicaments, .titre-users, .titres-orders, .titre-add-drug{
+    font-size: 20px;
+    color: #56616B;
+}
+
+.add-drug{
+    margin-top: 30px;
+}
+
+.input-group{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.input-item{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+table{
+    margin-top: 10px;
+    border-collapse: collapse;
+    width: 100%;
+    color: #56616B;
+}
+
+table td, table th{
+    border: 1px solid rgb(229, 225, 225);
+    padding-block: 10px;
+    font-weight: normal;
+    text-align: center;
+    font-size: 18px;
+    max-width: 50px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+table tbody tr:nth-child(odd){
+    background-color: #f0f2f5;
+}
+
+.right{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 50px;
+}
+
+.right-blue-container{
+    background-color: #2653A4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    padding-block: 20px;
+    padding-inline: 5px;
+}
+
+  .minimize .link {
+      justify-content: center;
+      align-items: center;
+      padding-inline: 0;
+  }
+
+.add-drug-main{
+    min-height: 90vh;
+    position: relative;
+}
+
+label{
+    text-align: right;
+}
+
+.form-container{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 30px;
+    padding-left: 50px;
+    margin-bottom: 20px;
+}
+
+.form-input-group{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+}
+
+.form-input-group input, .form-input-group textarea{
+    width: 85%;
+    padding-block: 15px;
+    border: 1px solid #ccc;
+}
+
+.drug-main-content{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    margin-left: 25%;
+}
+
+.drug-main-content.grow{
+    margin-left: 5%;
+}
+
+#submitBtn{
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #27B779;
+    padding: 10px;
+    font-size: 15px;
+}
+
+.bottom-text{
+    text-align: center;
+}
+
+.error{
+    color: red;
+    text-align: right;
+}
+
+@media screen and (max-width: 768px){
+    header{
+        flex-direction: column;
+    }
+    .header-left, .header-right{
+        width: 100%;
+    }
+
+    main aside{
+        width: 0%;
+        overflow: hidden;
+    }
+
+    main .main-content{
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .grow.main-content{
+        width: 100%;
+    }
+    .statuts{
+        grid-template-columns: auto;
+        row-gap: 20px;
+    }
+
+    table td, table th{
+        font-size: 12px;
+    }
+
+    i.first-bars{
+        display: none;
+    }
+
+    aside.minimize{
+        width: 0;
+    }
+    
+    i.dots, i.second-bars{
+        display: inline;
+    }
+
+    .h-0{
+        height: 0;
+        overflow: hidden;
+    }
+
+    .slide{
+        position: fixed;
+        top: 10vh;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+        width: 50% !important;
+        height: 100%;
+    }
+
+    aside.minimize span {
+        display: inline;
+    }
+
+    .header-left.minimize .logo{
+        display: block;
+    }
+
+    .header-left.minimize{
+        width: 100%;
+    }
+
+    .header-left{
+        justify-content: space-between;
+    }
+
+    .minimize .link{
+        justify-content: flex-start;
+        padding-left: 20px;
+    }
+
+    .drug-main-content{
+        margin-left: 0px;
+        width: 100%;
+    }
+
+    .drug-main-content.grow{
+        margin-left: 0;
+    }
+
+    .add-drug-main .main-content-top{
+        font-size: 14px;
+    }
+
+        .form-input-group input,
+        .form-input-group textarea {
+            width: 75%;
+        }
+
+        .form-container{
+            padding-left: 0;
+        }
+
+        
+}
+

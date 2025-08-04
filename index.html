@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DASHBOARD</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+        integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel='stylesheet'
+        href='https://cdn-uicons.flaticon.com/3.0.0/uicons-regular-rounded/css/uicons-regular-rounded.css'>
+</head>
+<body>
+    <header>
+        <div class="header-left">
+            <i class="fa-solid fa-bars second-bars"></i>
+            <div class="header-left-container">
+                <i class="fa-solid fa-circle-plus plus" style="color: #2653A4;"></i>
+                <img src="/img/logo.jpg" alt="logo" class="logo">
+            </div>
+            <i class="fi fi-rr-menu-dots dots"></i>
+        </div>
+        <div class="header-right">
+            <div class="left-icons-group">
+                <i class="fa-solid fa-bars first-bars"></i>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <div class="right-icons-group">
+                <i class="fa-solid fa-bell"></i>
+                <i class="fa-solid fa-message"></i>
+                <i class="fa-solid fa-circle-user"></i>
+            </div>
+        </div>
+    </header>
+    <main>
+        <aside>
+            <ul class="links">
+                <li>
+                    <a href="/admin/index.html" class="link active">
+                        <i class="fa-solid fa-chart-line"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/commandes.html" class="link">
+                        <i class="fa-solid fa-chart-simple"></i>
+                        <span>Commandes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/medicaments.html" class="link">
+                        <i class="fa-solid fa-pills"></i>
+                        <span>M&eacute;dicaments</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="/admin/users.html" class="link">
+                        <i class="fa-solid fa-users"></i>
+                        <span>Utilisateurs</span>
+                    </a>
+                </li>
+            </ul>
+        </aside>
+        <section class="main-content">
+            <div class="main-content-top">
+                <div>Dashboard</div>
+                <div class="breadcrumb">
+                    <span class="current-page">Home</span>
+                    <span>></span>
+                    <span>Dashboard</span>
+                </div>
+            </div>
+
+            <div class="statuts">
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <div class="description-statut">(12) Commandes</div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-line"></i>
+                    <div class="description-statut">(3) En cours</div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-check"></i>
+                    <div class="description-statut">(7) Valid&eacute;es</div>
+                </div>
+                <div>
+                    <i class="fa-solid fa-xmark"></i>
+                    <divn class="description-statut">(2) Annul&eacute;es</div>
+                </div>
+            </div>
+
+            <div class="commandes">
+                <p class="titre-commandes">Nos derni&egrave;res commandes</p>
+                <div class="input-group">
+                    <div class="input-item">
+                        <label for="show">Show</label>
+                        <select id="show">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                        </select>
+                    </div>
+
+                    <div class="input-item">
+                        <label for="search">Search:</label>
+                        <input type="text">
+                    </div>
+                </div>
+                <p style="color: #56616B;">entries</p>
+
+                <table id="tableCommandes">
+                    <thead>
+                        <th>Client</th>
+                        <th>M&eacute;dicaments</th>
+                        <th>PU</th>
+                        <th>Qt&eacute;</th>
+                        <th>Date</th>
+                        <th>Montant (FCFA)</th>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
+        </section>
+    </main>
+
+    <script src="/admin/js/index.js"></script>
+</body>
+</html>
