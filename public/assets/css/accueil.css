@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Lato-Black";
+    src: url(../../../../FONT/Lato-Black.ttf) format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: "Lato-Black";
+}
+
+header {
+    display: flex;
+    height: 50px;
+    justify-content: space-between;
+    padding-top: 10px;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+header img {
+    object-fit: cover;
+    height: 80%;
+    width: 300px;
+}
+
+header nav i {
+    color: gray;
+    font-size: 30px;
+    padding-left: 20px;
+}
+.container{
+    background-image: url(../image/infimiere.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin-top: 20px;
+}
+main {
+    font-size: 15px;
+    position: absolute;  
+    left: 100px;
+    bottom: 320px;
+}
+
+.background
+{
+    background-color: green;
+    height: 470px;
+    width: 100%;
+    opacity: 0.8;
+}
+
+input::placeholder {
+    font-size: 15px;
+}
+main h3{
+    color: white;
+    font-size: 37px;
+}
+
+main .search-bar {
+    border: 1px solid black;
+    width: 100%;
+    height: 60px;
+    background-color: white;
+    padding-left: 20px;
+    position: relative;
+    top: 50px;
+}
+
+input{
+    outline: none;
+    border: none;
+    height: 40px;
+    width: 380px;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+main img {
+    width: 100px;
+}
+#effe
+{
+    height: 80px;
+    width: 110px;
+}
+#para
+{
+    height: 80px;
+}
+#maalox {
+    width: 110px;
+}
+.image{
+    position: relative;
+    top: 130px;
+    display: flex;
+    align-items: center;
+    gap: 300px;
+    
+}
+
+footer {
+    background-color: black;
+    color: white;
+    height: 207px;
+    padding-left: 100px;
+    padding-right: 100px;
+    margin-top: 0px;
+    padding-top: 25px;
+    font-size: 13px;
+}
+
+footer section {
+    display: flex;
+    justify-content: space-between;
+}
+
+footer img {
+    width: 200px;
+}
+
+#foot,
+span {
+    opacity: 0.6;
+}
+
+#foot i {
+    margin-top: 20px;
+}
+
+footer p {
+    margin-top: 30px;
+}
+span{
+    margin-left: 500px;
+}
